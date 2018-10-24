@@ -1,27 +1,20 @@
-<nav class="navbar navbar-default" role="navigation">
-<div class="container">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar12">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="./"><b>MacksJacga</b></a>
+    <div class="collapse navbar-collapse" id="navbar12"> <a class="navbar-brand d-none d-md-block" href="#">
+        <i class="fa d-inline fa-lg fa-circle"></i>
+        <b>MacksJacga</b>
+      </a>
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item"> <a class="nav-link" href="#">Productos</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#"></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item"> <a class="nav-link" href="#">Inicia Sesión</a> </li>
+        <li class="nav-item"> <a class="nav-link text-primary" href="#">Regístrate</a> </li>
+      </ul>
+    </div>
   </div>
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav">
-      <?php if(!isset($_SESSION["user_id"])):?>
-      <li><a href="./registro.php">REGISTRO</a></li>
-      <li><a href="./login.php">LOGIN</a></li>
-    <?php else:?>
-      <li><a href="./php/logout.php">SALIR</a></li>
-    <?php endif;?>
-    </ul>
-
-  </div><!-- /.navbar-collapse -->
-</div>
 </nav>
